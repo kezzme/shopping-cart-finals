@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="css/styles.css">
     <title>Learn IT Easy Online Shop | Shopping Cart</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
         <hr>
         <h3>Product Successfully Added to the Cart, what do you want to do next?</h3>
         <a href="cart.php" class="btn btn-dark btn-lg"><i class="fa fa-shopping-cart"></i> View Cart</a>
-        <a href="/shopping-cart/" class="btn btn-danger btn-lg"><i class="fa fa-shopping-bag"></i> Continue Shopping</a>
+        <a href="/shopping-cart-finals/" class="btn btn-danger btn-lg"><i class="fa fa-shopping-bag"></i> Continue Shopping</a>
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
