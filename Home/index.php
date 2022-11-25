@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once('dataset.php'); // this is the file where our array is declared    
+    require_once('dataset.php');   
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +20,8 @@
             <div class="col-10">
                 <h1><i class="fa fa-store"></i> Learn IT Easy Online Shop</h1>
             </div>
+
+            <!-- button cart -->
             <div class="col-2 text-right">
                 <a href="cart.php" class="btn btn-primary">
                     <i class="fa fa-shopping-cart"></i> Cart
@@ -37,18 +39,23 @@
                     <div class="col-md-3 col-sm-6 mb-4">
                         <div class="product-grid2 card">
                             <div class="product-image2">
-                                <a href="details.php?k=<?php echo $key; ?>">
-                                    <img class="pic-1" src="img/<?php echo $product['photo1']; ?>">
-                                    <img class="pic-2" src="img/<?php echo $product['photo2']; ?>">
-                                </a>                        
-                                <a class="add-to-cart" href="details.php?k=<?php echo $key; ?>"><i class="fa fa-cart-plus"></i> Add to cart</a>
+                                
+                            <!-- hover -->
+                            <a href="details.php?k=<?php echo $key; ?>">
+                                <img class="pic-1" src="img/<?php echo $product['photo1']; ?>">
+                                <img class="pic-2" src="img/<?php echo $product['photo2']; ?>">
+                            </a>
+                            <a class="add-to-cart" href="details.php?k=<?php echo $key; ?>"><i class="fa fa-cart-plus"></i> Add to cart</a>
                             </div>
+
+                            <!-- display product name & price -->
                             <div class="product-content">
                                 <h3 class="title">
                                     <?php echo $product['name']; ?>
                                     <span class="badge badge-dark">₱ <?php echo $product['price']; ?></span>
                                 </h3>
                             </div>
+                            
                         </div>
                     </div>
                 <?php endforeach; ?>

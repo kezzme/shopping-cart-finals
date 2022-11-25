@@ -3,12 +3,9 @@
     require_once('dataset.php');
 
     if(isset($_POST['btnProcess'])) {
-        // the best way to remove the selected item from the cart/session is to unset iterator_apply
-        // to do that we should call the proper elements in the session_destroy
-        // so with that the key and the size values should be supplied as index to our session cart items
         unset($_SESSION['cartItems'][$_POST['hdnKey']][$_POST['hdnSize']]);
 
-        // then update the session total quantity buy subtracting the previous quantity of the deleted item from the total quantity
+        //updating total quantity by subtracting the deleted item
         $_SESSION['totalQuantity'] -= $_POST['hdnQuantity'];
         header("location: cart.php");
     }
@@ -32,6 +29,7 @@
                 <div class="col-10">
                     <h1><i class="fa fa-store"></i> Learn IT Easy Online Shop</h1>
                 </div>
+                <!-- to display cart button -->
                 <div class="col-2 text-right">
                     <a href="cart.php" class="btn btn-primary">
                         <i class="fa fa-shopping-cart"></i> Cart
@@ -43,6 +41,7 @@
             </div>
             <hr>
 
+            <!-- to display photo -->
             <div class="row">
                 <?php if(isset($_GET['k']) && isset($arrProducts[$_GET['k']])): ?>
                     <div class="col-md-4 col-sm-6 mb-4">
@@ -54,26 +53,39 @@
                                 </a>                            
                             </div>                        
                         </div>
-                    </div>                
+                    </div>              
+                    
+                    <!-- item name -->
                     <div class="col-md-8 col-sm-6 mb-4">                
                         <h3 class="title">
                             <?php echo $arrProducts[$_GET['k']]['name']; ?>
                             <span class="badge badge-dark">₱ <?php echo $arrProducts[$_GET['k']]['price']; ?></span>
                         </h3>
+
+                    <!-- item description -->
                         <p><?php echo $arrProducts[$_GET['k']]['description']; ?></p>                    
                         <hr>
                         <input type="hidden" name="hdnKey" value="<?php echo $_GET['k']; ?>">
                         <input type="hidden" name="hdnSize" value="<?php echo $_GET['s']; ?>">
                         <input type="hidden" name="hdnQuantity" value="<?php echo $_GET['q']; ?>">
-
+                    
+                        <!-- item size -->
                         <h3 class="title">Size: <?php echo $_GET['s']; ?></h3>                        
                         <hr>
+
+                        <!-- item quantity -->
                         <h3 class="title">Quantity: <?php echo $_GET['q']; ?></h3>
                         <br>
+
+                        <!-- confirm product removal -->
                         <button type="submit" name="btnProcess" class="btn btn-dark btn-lg"><i class="fa fa-trash"></i> Confirm Product Removal</button>
+                        
+                        <!-- cancel product removal -->
                         <a href="cart.php" class="btn btn-danger btn-lg"><i class="fa fa-arrow-left"></i> Cancel / Go Back</a>
-                    </div>                                
+                    </div>     
+
                 <?php else: ?>
+                    
                     <div class="col-12 card p-5">
                         <h3 class="text-center text-danger">No Product Found!</h3>
                     </div>

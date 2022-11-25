@@ -3,21 +3,15 @@
     require_once('dataset.php');
 
     if(isset($_POST['btnProcess'])) {
-        // the stucture of our session cartItems goes like this
-        // $_SESSION['cartItems'][key][size] = quantity
-        // it is a two dimensional array where the first index denotes the key/number/id of the specific record (array/items)
-        // followed by the size of that particular item as the second index
-        // the value to be stored is nothing other than the quantity which denotes how many pieces did the buyer purchased for that product and for that specific size
-        // if it is the first time that the item is placed then we will not find that array signature so we create that array structure then store the quantity in it
-        // otherwise we add the new quantity from the previous quantity
-
+   
         if(isset($_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']]))
-            $_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']] += $_POST['txtQuantity']; // if you already purchased this item
+            // already purchased
+            $_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']] += $_POST['txtQuantity'];
         else
-            $_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']] = $_POST['txtQuantity']; // if this is the first time you purchased the item
+            // new purchased
+            $_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']] = $_POST['txtQuantity'];
 
-        // then we compute the total quantity based on the new number of quantity being purchased
-        // then we force redirect to the confirm file in order to notify the user on a successfull purchase
+        //compute the total quantity based on the new number of quantity
         $_SESSION['totalQuantity'] += $_POST['txtQuantity'];
         header("location: confirm.php");
     }
@@ -42,6 +36,8 @@
                 <div class="col-10">
                     <h1><i class="fa fa-store"></i> Learn IT Easy Online Shop</h1>
                 </div>
+
+                <!-- button cart -->
                 <div class="col-2 text-right">
                     <a href="cart.php" class="btn btn-primary">
                         <i class="fa fa-shopping-cart"></i> Cart
@@ -92,7 +88,9 @@
                         <h3 class="title">Enter Quantity:</h3>
                         <input type="number" name="txtQuantity" id="txtQuantity" class="form-control" placeholder="0" min="1" max="100" required>
                         <br>
+                        <!-- confirm purchase -->
                         <button type="submit" name="btnProcess" class="btn btn-dark btn-lg"><i class="fa fa-check-circle"></i> Confirm Product Purchase</button>
+                        <!-- cancel purchase -->
                         <a href="/shopping-cart-finals/Home/" class="btn btn-danger btn-lg"><i class="fa fa-arrow-left"></i> Cancel / Go Back</a>
                     </div>                                
                 <?php else: ?>

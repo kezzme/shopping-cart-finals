@@ -15,7 +15,7 @@
             'photo2'        => "BSNP1.png",
         ),
         array(
-            'name'          => "Classic Clog in Black",
+            'name'          => "Classic Clog in Painted Black",
             'description'   => "Donec ac neque non turpis aliquet vehicula a in eros. Vestibulum ante mauris, condimentum nec ex eget, ultrices consequat felis. Curabitur nec consequat magna. Donec euismod magna tortor, eget ultrices mauris lobortis et. Etiam imperdiet aliquet porta. Maecenas magna felis, placerat et rhoncus quis, gravida in nunc.",
             'price'         => "3245",
             'photo1'        => "CCB.png",
@@ -36,7 +36,7 @@
             'photo2'        => "L3601.png",
         ),
         array(
-            'name'          => "Classic Sandal in Navy",
+            'name'          => "Classic Sandal in Navy Blue",
             'description'   => "Maecenas gravida viverra felis, in rutrum dolor. Nam pharetra mollis urna, eu sagittis odio luctus quis. Pellentesque vulputate arcu purus, non tincidunt ligula rutrum ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc et nibh sed massa vulputate sagittis. Fusce sit amet odio ut dui auctor venenatis eu non leo. ",
             'price'         => "1399",
             'photo1'        => "CSN.png",
@@ -50,7 +50,7 @@
             'photo2'        => "LCNB1.png",
         ), 
         array(
-            'name'          => "Classic Clog in Bone",
+            'name'          => "Classic Clog in Painted Bone",
             'description'   => "Donec rutrum, ipsum ac molestie tristique, nisi leo hendrerit nibh, eu volutpat augue nibh in massa. Nulla molestie elit sit amet urna mattis, molestie pharetra tortor venenatis. In quis dolor sed urna maximus dignissim. Morbi aliquet nulla eget erat accumsan, id pretium ex varius.",
             'price'         => "3245",
             'photo1'        => "CCBone.png",
