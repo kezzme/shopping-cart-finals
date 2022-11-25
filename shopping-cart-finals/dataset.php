@@ -8,7 +8,7 @@
             'photo2'        => "BCBW1.png",
         ),
         array(
-            'name'          => "Bayaband Slide in Navy Pepper",
+            'name'          => "Bayaband Slide in Navy",
             'description'   => "Aenean tincidunt mattis eros, non venenatis felis suscipit eu. Fusce a tempus nulla. Cras pretium purus augue, ut semper arcu pulvinar sit amet. Nam et est consectetur, mollis mi nec, pharetra nibh. Sed malesuada pellentesque ipsum, vel congue purus. Mauris eget velit vel metus ullamcorper lacinia. Sed in vestibulum erat.",
             'price'         => "1745",
             'photo1'        => "BSNP.png",
@@ -22,7 +22,7 @@
             'photo2'        => "CCB1.png",
         ),
         array(
-            'name'          => "Classic Translucent Solarized Clog",
+            'name'          => "Classic Translucent Solarized",
             'description'   => "Proin rutrum volutpat ultricies. In vitae lorem vitae augue blandit lobortis. Aenean vel elit malesuada, semper diam et, tristique quam. Praesent scelerisque ipsum vitae vehicula aliquet. Morbi odio risus, consectetur in tristique eget, scelerisque nec erat. Nulla porttitor erat eget risus scelerisque, vitae gravida tortor interdum. Aliquam commodo lacinia ante sit amet commodo.",
             'price'         => "1999",
             'photo1'        => "CTSC.png",
