@@ -19,7 +19,7 @@
 
                 // recompute the total quantity
                 $_SESSION['totalQuantity'] += $cartQuantities[$index];
-            }
+            }   
         }
     }
 ?>

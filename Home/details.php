@@ -2,7 +2,7 @@
     session_start();
     require_once('dataset.php');
 
-    if(isset($_POST['btnProcess'])) {
+    if(isset($_POST['confProcess'])) {
    
         if(isset($_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']]))
             // already purchased
@@ -89,7 +89,7 @@
                         <input type="number" name="txtQuantity" id="txtQuantity" class="form-control" placeholder="0" min="1" max="100" required>
                         <br>
                         <!-- confirm purchase -->
-                        <button type="submit" name="btnProcess" class="btn btn-dark btn-lg"><i class="fa fa-check-circle"></i> Confirm Product Purchase</button>
+                        <button type="submit" name="confProcess" class="btn btn-dark btn-lg"><i class="fa fa-check-circle"></i> Confirm Product Purchase</button>
                         <!-- cancel purchase -->
                         <a href="/shopping-cart-finals/Home/" class="btn btn-danger btn-lg"><i class="fa fa-arrow-left"></i> Cancel / Go Back</a>
                     </div>                                

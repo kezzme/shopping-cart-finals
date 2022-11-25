@@ -16,6 +16,8 @@
             <div class="col-10">
                 <h1><i class="fa fa-store"></i> Learn IT Easy Online Shop</h1>
             </div>
+
+            <!-- button cart -->
             <div class="col-2 text-right">
                 <a href="cart.php" class="btn btn-primary">
                     <i class="fa fa-shopping-cart"></i> Cart

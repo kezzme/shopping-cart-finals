@@ -2,7 +2,7 @@
     session_start();
     require_once('dataset.php');
 
-    if(isset($_POST['btnProcess'])) {
+    if(isset($_POST['confProcess'])) {
         unset($_SESSION['cartItems'][$_POST['hdnKey']][$_POST['hdnSize']]);
 
         //updating total quantity by subtracting the deleted item
@@ -78,7 +78,7 @@
                         <br>
 
                         <!-- confirm product removal -->
-                        <button type="submit" name="btnProcess" class="btn btn-dark btn-lg"><i class="fa fa-trash"></i> Confirm Product Removal</button>
+                        <button type="submit" name="confProcess" class="btn btn-dark btn-lg"><i class="fa fa-trash"></i> Confirm Product Removal</button>
                         
                         <!-- cancel product removal -->
                         <a href="cart.php" class="btn btn-danger btn-lg"><i class="fa fa-arrow-left"></i> Cancel / Go Back</a>
