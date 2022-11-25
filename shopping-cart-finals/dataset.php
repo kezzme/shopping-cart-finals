@@ -22,14 +22,14 @@
             'photo2'        => "CCB1.png",
         ),
         array(
-            'name'          => "Classic Translucent Solarized Clog in Black Multi",
+            'name'          => "Classic Translucent Solarized Clog",
             'description'   => "Proin rutrum volutpat ultricies. In vitae lorem vitae augue blandit lobortis. Aenean vel elit malesuada, semper diam et, tristique quam. Praesent scelerisque ipsum vitae vehicula aliquet. Morbi odio risus, consectetur in tristique eget, scelerisque nec erat. Nulla porttitor erat eget risus scelerisque, vitae gravida tortor interdum. Aliquam commodo lacinia ante sit amet commodo.",
             'price'         => "1999",
             'photo1'        => "CTSC.png",
             'photo2'        => "CTSC1.png",
         ),
         array(
-            'name'          => "Literide 360 Clog in Black Slate Grey",
+            'name'          => "Literide 360 Clog in Grey",
             'description'   => "Nullam pharetra sit amet lectus eu mattis. Cras nec blandit massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur volutpat, velit eu bibendum aliquet, justo justo sodales ligula, sit amet fermentum velit est id sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eget scelerisque dui.",
             'price'         => "2999",
             'photo1'        => "L360.png",
@@ -43,7 +43,7 @@
             'photo2'        => "CSN1.png",
         ),
         array(
-            'name'          => "Literide 360 Clog in Navy Blue Grey",
+            'name'          => "Literide 360 Clog in Navy",
             'description'   => "Morbi pharetra nisi felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse pretium sem ut orci semper fermentum. Curabitur quis dui quis quam laoreet sollicitudin. Quisque sit amet faucibus ligula, quis pharetra lacus. Proin ut imperdiet lectus, sit amet placerat risus.",
             'price'         => "2999",
             'photo1'        => "LCNB.png",
